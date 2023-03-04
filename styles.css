@@ -47,10 +47,6 @@ p {
   letter-spacing: .2rem;
 }
 
-.service-top .section-title{
-  font-size: 3.5rem;
-}
-
 .section-title span{
   color: crimson;
 }
@@ -363,6 +359,7 @@ p {
 }
 #projects .projects-header h1{
   margin-bottom: 50px;
+  text-align: center;
 }
 
 #projects .all-projects{
@@ -505,6 +502,10 @@ p {
   width: 98%;
   border: 7px solid crimson;
   z-index: -1
+}
+
+.col-right .cta{
+  color: black;
 }
 
 /* Enf OfAbout Section */
