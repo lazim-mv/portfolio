@@ -39,12 +39,16 @@ p {
 }
 
 .section-title{
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 300;
   color: Black;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: .2rem;
+}
+
+.service-top .section-title{
+  font-size: 3.5rem;
 }
 
 .section-title span{
