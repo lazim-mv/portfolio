@@ -408,6 +408,19 @@ p {
   color: white;
 }
 
+#projects .project-info a{
+  font-size: 2rem;
+    color: white;
+    padding: 7px;
+    border: 2px solid;
+    margin-top: 10px;
+    opacity: .2;
+}
+
+#projects .project-info > a:hover{
+  opacity: 1;
+}
+
 #projects .project-image{
   flex-basis: 50%;
   height: 300px;
