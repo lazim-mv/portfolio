@@ -30,13 +30,15 @@ img{
 }
 
 p {
-  color: black;
-  font-size: 1.4rem;
-  margin-top: 5px;
-  line-height: 2.5rem;
-  font-weight: 300;
-  letter-spacing: 0.05rem;
+	color: black;
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
 }
+
+
 
 .section-title{
   font-size: 4rem;
@@ -46,6 +48,7 @@ p {
   text-transform: uppercase;
   letter-spacing: .2rem;
 }
+
 
 .section-title span{
   color: crimson;
@@ -63,6 +66,10 @@ p {
   margin-top: 30px;
   transition: .3s ease;
   transition-property: background;
+}
+
+.col-right .cta{
+  color: black;
 }
 
 .cta:hover{
@@ -211,7 +218,7 @@ p {
 
 /* Hero */
 #hero{
-  background-image: url('./hero-bg.png');
+  background-image: url('C:/Users/BoltDock/Desktop/Angela Yu/portfolio1/img/hero-bg.png');
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -394,8 +401,9 @@ p {
 
 #projects .project-info h1{
   font-family: 'Montserrat',sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 #projects .project-info h2{
@@ -415,11 +423,11 @@ p {
     padding: 7px;
     border: 2px solid;
     margin-top: 10px;
-    opacity: .2;
+    opacity: 1;
 }
 
 #projects .project-info > a:hover{
-  opacity: 1;
+  opacity: .2;
 }
 
 #projects .project-image{
@@ -427,6 +435,13 @@ p {
   height: 300px;
   overflow: hidden;
   position: relative;
+}
+
+#projects .card-body{
+  display: flex;
+  height: 92px;
+  flex-wrap: wrap;
+  overflow-y: auto;
 }
 
 #projects .project-image:after {
@@ -437,7 +452,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: .1;
+	opacity: .5;
 }
 
 #projects .project-img img {
@@ -502,10 +517,6 @@ p {
   width: 98%;
   border: 7px solid crimson;
   z-index: -1
-}
-
-.col-right .cta{
-  color: black;
 }
 
 /* Enf OfAbout Section */
@@ -644,10 +655,11 @@ p {
 /* Media query for Tablet */
 
 @media only screen and (min-width:768px) {
-  .hero-info{
-    margin-top: 110px;
-  }	
 
+  .hero-info{
+    margin-top: 80px;
+  }
+  
   .cta{
     font-size: 2.5rem;
     padding: 20px 60px;
@@ -685,7 +697,7 @@ p {
 #projects .project-item {
   height: 400px;
   margin: 0;
-/*   width: 100%; */
+  /* width: 100%; */
   border-radius: 0;
 }
 #projects .all-projects .project-info {
@@ -763,17 +775,18 @@ p {
 /* End OF Contact Section */
 }
 
+}
+
 /* End Of Media query for Tablet */
 
 /* Medie query for desktop */
 @media only screen and (min-width:1200px) {
   /* Header */
-	
-	
+
   .hero-info{
-    margin-top: 80px;
+    margin-top: 110px;
   }
-	
+
   #header .hamburger{
     display: none;
   }
